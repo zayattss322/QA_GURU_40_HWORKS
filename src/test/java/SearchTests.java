@@ -11,9 +11,16 @@ public class SearchTests {
         $("[id=results]").shouldHave(text("selenide"));
     }
     @Test
-    void successfulSearchTestYahoo() {
+    void successfulSearchTestYahooYandex() {
         open("https://search.yahoo.com/");
         $("[name=p]").setValue("yandex").pressEnter();
         $("[id=results]").shouldHave(text("yandex"));
     }
+    @Test
+    void successfulSearchTestYahooGradle() {
+        open("https://search.yahoo.com/");
+        $("[name=p]").setValue("gradle").pressEnter();
+        $("[id=results]").shouldHave(text("gradle"));
+    }
+
 }
