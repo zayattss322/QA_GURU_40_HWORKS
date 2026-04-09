@@ -23,10 +23,10 @@ public class SearchTests {
         $("[id=results]").shouldHave(text("yandex"));
     }
         @Test
-    void successfulSearchTestYahooYandex3() {
+    void successfulSearchTestYahooZxc() {
         open("https://search.yahoo.com/");
         $("[name=p]").setValue("yandex").pressEnter();
-        $("[id=results]").shouldHave(text("yandex"));
+        $("[id=results]").shouldHave(text("zxc"));
     }
         @Test
     void successfulSearchTestYahooYandex4() {
