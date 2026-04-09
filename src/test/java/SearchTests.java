@@ -22,5 +22,4 @@ public class SearchTests {
         $("[name=p]").setValue("gradle").pressEnter();
         $("[id=results]").shouldHave(text("gradle"));
     }
-
 }
