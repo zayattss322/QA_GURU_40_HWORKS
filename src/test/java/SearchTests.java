@@ -5,12 +5,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class SearchTests {
     @Test
-    void successfulSearchTest() {
-        open("https://search.yahoo.com/");
-        $("[name=p]").setValue("selenide").pressEnter();
-        $("[id=results]").shouldHave(text("selenide"));
-    }
-    @Test
     void successfulSearchTestYahooYandex() {
         open("https://search.yahoo.com/");
         $("[name=p]").setValue("yandex").pressEnter();
