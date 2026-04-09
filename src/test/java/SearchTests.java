@@ -28,5 +28,11 @@ public class SearchTests {
         $("[name=p]").setValue("yandex").pressEnter();
         $("[id=results]").shouldHave(text("yandex"));
     }
+    @Test
+    void successfulSearchTestYahooRussia() {
+        open("https://search.yahoo.com/");
+        $("[name=p]").setValue("russia").pressEnter();
+        $("[id=results]").shouldHave(text("russia"));
+    }
 
 }
